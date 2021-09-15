@@ -6,10 +6,14 @@ require("@nomiclabs/hardhat-waffle");
 module.exports = {
     solidity: "0.7.3",
 
-    defaultNetwork: 'localhost',
+    defaultNetwork: 'findora',
     networks: {
         hardhat: {},
         localhost: {},
+        findora:{
+            url: 'https://dev-evm.dev.findora.org:8545',
+            accounts: ['Your private key'],
+        }
     }
 };
 
